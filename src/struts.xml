@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="studentInfo" namespace="/" extends="struts-default">
+		<action name="login" class="com.helloqidi.action.LoginAction">
+			<result name="error">/index.jsp</result>
+			<result name="success" type="redirect">/main.jsp</result>
+		</action>
+		
+		<action name="grade" class="com.helloqidi.action.GradeAction">
+		</action>
+		
+		<action name="student" class="com.helloqidi.action.StudentAction">
+		</action>
+			
+	</package>
+</struts>
